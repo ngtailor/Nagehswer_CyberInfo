@@ -1,0 +1,189 @@
+.character-table {
+    width: 100%;
+    border-collapse: collapse; /* Important for removing double borders */
+    margin-top: 20px;
+  }
+  
+  .character-table th, 
+  .character-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border: none; /* <== Add this to remove vertical borders */
+   
+
+  }
+  
+  /* .character-table th {
+    font-weight: bold;
+  } */
+
+  .character-table th {
+    background-color: #f9fafb;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #111827; /* optional: for a nice dark gray text */
+    text-align: left; /* optional: aligns with Figma look */
+  }
+  
+  
+  .character-table tr {
+    border-bottom: 1px solid #e5e7eb; /* Only horizontal line between rows */
+  }
+  
+  .character-table tr:last-child {
+    border-bottom: none; /* No border on last row */
+  }
+
+  .city_name{
+    font-family: 'Noto Sans',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color:#35353A
+  }
+  
+  .url-link {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 0; /* text-decoration-offset 0% */
+    text-decoration-thickness: auto; /* text-decoration-thickness 0% equivalent */
+    color: #175AE4; /* optional: a dark color to match figma style */
+  }
+  
+  /* Owner Cell */
+  .owner-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .owner-info .name {
+    background-color: #f9fafb;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #35353A; /* optional: for a nice dark gray text */
+    text-align: left; /* optional: aligns with Figma look */
+  }
+  
+  .owner-info .role {
+    background-color: #f9fafb;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #6E6E71; /* optional: for a nice dark gray text */
+    text-align: left; /* optional: aligns with Figma look */
+  }
+  
+  /* Team Members */
+  .team-members {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .team-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: -10px; /* overlap effect */
+    border: 2px solid #fff;
+    background-color: #eee;
+  }
+  
+  .more-members {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #374151;
+    margin-left: -10px; /* same overlap as images */
+    border: 2px solid #fff;
+  }
+  
+  
+  
+  /* Status Badge */
+  .status-badge {
+    width: 75px;
+    height: 28px;
+    padding: 3px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 4px;
+    background-color: #f3f4f6; /* soft background */
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #111827;
+    text-transform: capitalize; /* Optional: Makes "alive" => "Alive" */
+  }
+  
+  .status-badge.alive {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+  
+  .status-badge.dead {
+    background-color: #fecaca;
+    color: #b91c1c;
+  }
+  
+  .status-badge.unknown {
+    background-color: #fef3c7;
+    color: #92400e;
+  }
+  
+  /* Action Buttons */
+  .actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .actions i {
+    font-size: 18px;
+  }
+
+  .custom-select {
+    background-color: #ffffff;
+    width: 144px;
+    height: 36px;
+    padding: 6px 6px 6px 4px; /* Approximation of Spacing/100 and Spacing/150 */
+    border: 1px solid #d1d5db; /* You can update to match design if needed */
+    border-radius: 6px; /* Assuming Corner/100 = 6px */
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #111827;
+    cursor: pointer;
+  }
+  
+  

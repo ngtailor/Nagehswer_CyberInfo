@@ -1,0 +1,91 @@
+/* Main header container */
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background-color: white;
+ 
+  }
+  
+  /* Left side: Settings + Search */
+  .left-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  /* Settings Icon */
+  .settings-icon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Search box */
+  .search-container {
+    position: relative;
+  }
+  
+  .search-input {
+    padding: 8px 8px 8px 30px; /* space for search icon if needed */
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #6E6E71; /* your Figma color for text */
+  width: 220px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  /* Right side: Pagination + Action Icons */
+  .right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Pagination text */
+  .pagination-info {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  /* Arrow buttons and action buttons */
+  .icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #374151;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the icon properly */
+    padding: 0; /* Remove padding to keep exact size */
+    width: 24px;
+    height: 24px;
+  }
+  
+  .icon-button:hover {
+    color: black;
+  }
+  
+  /* Divider between groups */
+  .vertical-divider {
+    width: 1px;
+    height: 24px;
+    background-color: #d1d5db;
+    margin: 0 8px;
+  }
+  
